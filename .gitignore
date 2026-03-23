@@ -1,0 +1,56 @@
+# ── Node ──────────────────────────────────────────────────────────────────────
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Env files ─────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── Alembic ───────────────────────────────────────────────────────────────────
+# keep versions tracked, ignore compiled cache
+apps/api/alembic/__pycache__/
+apps/api/alembic/versions/__pycache__/
+
+# ── MinIO / uploads ───────────────────────────────────────────────────────────
+uploads/
+minio_data/
